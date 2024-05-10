@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ScheduSend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar sections starts  -->
+    <header class="header">
+        <div class="logo">
+            <h1>ScheduSend <i class="fa-solid fa-paper-plane" style="color:var(--Soft-Red);"></i></h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="/index" class="btn">Home</a>
+            <a href="/login" class="btn">Log in</a>
+        </nav>
+
+
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+    <!-- navbar sections starts  -->
+
+   
+    <!-- home section stars  -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Plan, Schedule, Send</h1>
+            <p class="para">ScheduSend empowers you to send messages on your schedule. Stay organized, stay connected, and never miss a beat with our intuitive scheduling platform. Plan, schedule, and send messages effortlessly with ScheduSend.</p>
+
+            <a href="/login" class="home-btn">Get Started</a>
+        </div>
+
+
+        <div class="image">
+            <img src="images/scheduller.gif" alt="illustration-hero">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 ScheduSend. All rights reserved.</p>
+    </footer> 
+
+    <script>
+        let menu = document.querySelector("#menu-btn")
+let navbar = document.querySelector(".navbar")
+
+
+menu.onclick = () =>{
+    menu.classList.toggle("fa-times")
+    navbar.classList.toggle("active")
+}
+
+
+window.onscroll = () =>{
+    menu.classList.remove("fa-times")
+    navbar.classList.remove("active")
+}
+    </script>    
+</body>
+</html>
